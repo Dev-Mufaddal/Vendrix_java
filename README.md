@@ -1,4 +1,5 @@
 🛒 E-Commerce Java Web Application
+
 📌 Project Overview
 
 The JP Application is a Java-based E-Commerce Web Application that demonstrates real-world implementation of Java Web Technologies, MVC architecture, and database-driven development.
