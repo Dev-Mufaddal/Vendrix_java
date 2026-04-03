@@ -1,157 +1,167 @@
-🛒 E-Commerce Java Web Application
+# 🛒 E-Commerce Web Application using Java
 
+## 📌 Overview
 
-📌 Project Overview
+This project is a **Java-based E-Commerce Web Application** developed using **JSP, Servlets, JDBC, and MySQL** following the **MVC (Model-View-Controller)** architecture.
 
+The application demonstrates core functionality of an online shopping system such as displaying products, managing cart items, and placing orders. It is designed as a **portfolio project** to showcase backend development skills using Java.
 
-The JP Application is a Java-based E-Commerce Web Application that demonstrates real-world implementation of Java Web Technologies, MVC architecture, and database-driven development.
+---
 
-This project simulates the core functionality of an online shopping system including product browsing, cart management, and order processing.
+## 🚀 Features
 
-It is designed to showcase backend development skills using Java and serves as a strong portfolio project for Java Developer roles.
+* View product list
+* Add products to cart
+* Place orders
+* Database connectivity using JDBC
+* MVC architecture implementation
+* Modular and structured code
+* Dynamic web pages using JSP
+* Servlet-based controller logic
 
+---
 
-🚀 Key Features
+## 🧑‍💻 Technologies Used
 
+* Java
+* JSP (Java Server Pages)
+* Servlets
+* JDBC
+* MySQL Database
+* HTML
+* CSS
+* Apache Tomcat Server
+* Git & GitHub
 
-👤 User functionality (view products)
+---
 
-🛍️ Product catalog display
+## 📂 Project Structure
 
-🛒 Add to Cart feature
-
-📦 Order processing logic
-
-🔗 JDBC database connectivity
-
-🧩 MVC architecture implementation
-
-📁 Clean and modular code structure
-
-🌐 Web-based interface using JSP/Servlets
-
-
-🧑‍💻 Skills Demonstrated
-
-
-This project highlights the following technical skills:
-
-Core Java
-
-Advanced Java (JSP & Servlets)
-
-JDBC (Java Database Connectivity)
-
-MVC Design Pattern
-
-MySQL / Relational Database
-
-Web Development (HTML, CSS)
-
-Apache Tomcat Server
-
-Git & GitHub version control
-
-Project structuring best practices
-
-
-🏗️ Project Architecture
-
-
-The application follows MVC Architecture:
-
-Model → Handles database logic
-View → JSP pages for UI
-Controller → Servlets managing business logic
-
-jp_application
-
+```
+ecom_with_java
 │
-
-├── src/main/java
-
-│   ├── controller     → Servlet classes
-
-│   ├── model          → Business logic
-
-│   ├── dao            → Database interaction
-
+├── jp_application
+│   ├── src/main/java
+│   │   ├── controller
+│   │   ├── model
+│   │   ├── dao
+│   │
+│   ├── src/main/webapp
+│   │   ├── jsp
+│   │   ├── css
+│   │
+│   └── README.md
 │
+└── database
+```
 
-├── src/main/webapp
+---
 
-│   ├── jsp            → UI pages
+## ⚙️ Setup Instructions
 
-│   ├── css            → Styling
+### 1. Clone the repository
 
-│
-
-├── database           → SQL scripts
-
-└── README.md
-
-
-⚙️ Installation & Setup
-
-
-1️⃣ Clone Repository
-
-</> Bash
-
+```
 git clone https://github.com/Dev-Mufaddal/ecom_with_java.git
+```
 
-2️⃣ Navigate to Project Folder
+### 2. Open project in IDE
 
-</> Bash
+Import the project into:
 
-cd ecom_with_java/jp_application
+* Eclipse
+* IntelliJ IDEA
+* NetBeans
 
-3️⃣ Import into IDE
+### 3. Configure Database
 
-Open project using:
+Create database in MySQL:
 
-IntelliJ IDEA
+```
+CREATE DATABASE ecommerce;
+```
 
-Eclipse
+Update database configuration:
 
-NetBeans
-
-4️⃣ Configure Database
-
-Update database credentials in configuration file:
-
+```
 db.url=jdbc:mysql://localhost:3306/ecommerce
-
 db.username=root
-
 db.password=yourpassword
+```
 
-5️⃣ Run on Server
+### 4. Run Project
 
-Deploy project on:
+Deploy project on Apache Tomcat Server.
 
-Apache Tomcat Server
+Open in browser:
 
+```
+http://localhost:8080/jp_application
+```
 
-🎯 Learning Outcomes
+---
 
+## 📷 Screenshots
 
-Through this project, I gained practical experience in:
+Create a folder named **screenshots** and add images.
 
-Building dynamic web applications using Java
+Example:
 
-Implementing MVC architecture
+```
+screenshots/homepage.png
+screenshots/products.png
+screenshots/cart.png
+screenshots/order.png
+```
 
-Connecting Java applications to relational databases
+Then use:
 
-Structuring scalable backend code
+```
+## Screenshots
 
-Deploying applications on Tomcat server
+### Home Page
+![Home](screenshots/homepage.png)
 
-Managing project using GitHub
+### Products Page
+![Products](screenshots/products.png)
 
+### Cart Page
+![Cart](screenshots/cart.png)
 
-📜 License
+### Order Page
+![Order](screenshots/order.png)
+```
 
+---
 
-This project is created for educational and portfolio purposes.
+## 🎯 Learning Outcomes
+
+* Understanding MVC architecture
+* Working with JDBC database connectivity
+* Building dynamic web applications using JSP & Servlets
+* Structuring Java backend projects
+* Deploying applications on Tomcat server
+
+---
+
+## 💼 Resume Description
+
+Developed a Java-based E-Commerce Web Application using JSP, Servlets, and JDBC following MVC architecture. Implemented product listing, cart functionality, and order processing with MySQL integration. Demonstrates strong backend development and database connectivity skills.
+
+---
+
+## 🔮 Future Improvements
+
+* Login & Registration system
+* Admin dashboard
+* Payment gateway integration
+* Search functionality
+* Responsive UI design
+* REST API integration
+* Spring Boot version
+
+---
+
+## 📜 License
+
+This project is for learning and portfolio purposes.
