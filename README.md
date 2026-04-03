@@ -2,42 +2,70 @@
 
 ## 📌 Overview
 
-This project is a **Java-based E-Commerce Web Application** developed using **JSP, Servlets, JDBC, and MySQL** following the **MVC (Model-View-Controller)** architecture.
+This project is a **full-featured E-Commerce Web Application** developed using **Java, JSP, Servlets, JDBC, MySQL, and REST APIs**, following the **MVC (Model-View-Controller)** architecture.
 
-The application demonstrates core functionality of an online shopping system such as displaying products, managing cart items, and placing orders. It is designed as a **portfolio project** to showcase backend development skills using Java.
+The application simulates a real-world online shopping platform where users can browse products, search items, manage cart functionality, and place orders securely. It also includes an admin panel for managing product data.
+
+The project demonstrates strong understanding of **Java backend development**, **database integration**, **RESTful services**, and **responsive UI design**, making it suitable for **resume and portfolio presentation**.
 
 ---
 
 ## 🚀 Features
 
-* View product list
-* Add products to cart
+### 👤 User Features
+
+* User Registration & Login Authentication
+* Browse product catalog
+* Search products
+* Add to Cart functionality
+* Update cart items
 * Place orders
-* Database connectivity using JDBC
+* Integrated payment flow (Razorpay - Dummy)
+* Responsive UI using Bootstrap
+* Session management for secure access
+
+### 🛠️ Admin Features
+
+* Admin login functionality
+* Add new products
+* Update product details
+* Delete products
+* Manage product listings
+* Perform CRUD operations
+
+### ⚙️ System Features
+
 * MVC architecture implementation
-* Modular and structured code
+* REST API integration
+* JDBC database connectivity
+* MySQL relational database
+* Session tracking and validation
+* Modular and scalable code structure
+* Form validation and error handling
 * Dynamic web pages using JSP
-* Servlet-based controller logic
+* Bootstrap-based responsive UI
 
 ---
 
 ## 🧑‍💻 Technologies Used
 
-* Java
-* JSP (Java Server Pages)
-* Servlets
-* JDBC
-* MySQL Database
-* HTML
-* CSS
-* Apache Tomcat Server
-* Git & GitHub
+| Category             | Technology              |
+| -------------------- | ----------------------- |
+| Programming Language | Java                    |
+| Backend              | JSP, Servlets, REST API |
+| Database             | MySQL                   |
+| Connectivity         | JDBC                    |
+| Architecture         | MVC Pattern             |
+| Frontend             | HTML, CSS, Bootstrap    |
+| Payment Integration  | Razorpay (Dummy)        |
+| Server               | Apache Tomcat           |
+| Version Control      | Git, GitHub             |
 
 ---
 
 ## 📂 Project Structure
 
-```
+```id="l9q6tb"
 ecom_with_java
 │
 ├── jp_application
@@ -45,123 +73,102 @@ ecom_with_java
 │   │   ├── controller
 │   │   ├── model
 │   │   ├── dao
+│   │   ├── api
 │   │
 │   ├── src/main/webapp
 │   │   ├── jsp
 │   │   ├── css
+│   │   ├── js
 │   │
-│   └── README.md
+│   └── configuration files
 │
-└── database
+├── database
+│   └── ecommerce.sql
+│
+└── README.md
 ```
 
 ---
 
 ## ⚙️ Setup Instructions
 
-### 1. Clone the repository
+### 1️⃣ Clone Repository
 
-```
+```bash id="gk5x1g"
 git clone https://github.com/Dev-Mufaddal/ecom_with_java.git
 ```
 
-### 2. Open project in IDE
+### 2️⃣ Import Project into IDE
 
-Import the project into:
+Open project using:
 
-* Eclipse
 * IntelliJ IDEA
+* Eclipse
 * NetBeans
 
-### 3. Configure Database
+### 3️⃣ Configure Database
 
-Create database in MySQL:
+Create database:
 
-```
+```sql id="0ok7n7"
 CREATE DATABASE ecommerce;
 ```
 
+Import SQL file (if provided) OR create tables manually.
+
 Update database configuration:
 
-```
+```properties id="5q55hs"
 db.url=jdbc:mysql://localhost:3306/ecommerce
 db.username=root
 db.password=yourpassword
 ```
 
-### 4. Run Project
+---
 
-Deploy project on Apache Tomcat Server.
+### 4️⃣ Run Application
 
-Open in browser:
+Deploy project on **Apache Tomcat Server**
 
-```
+Access application in browser:
+
+```id="2od7q9"
 http://localhost:8080/jp_application
 ```
 
 ---
 
-## 📷 Screenshots
+## 🎯 Skills Demonstrated
 
-Create a folder named **screenshots** and add images.
-
-Example:
-
-```
-screenshots/homepage.png
-screenshots/products.png
-screenshots/cart.png
-screenshots/order.png
-```
-
-Then use:
-
-```
-## Screenshots
-
-### Home Page
-![Home](screenshots/homepage.png)
-
-### Products Page
-![Products](screenshots/products.png)
-
-### Cart Page
-![Cart](screenshots/cart.png)
-
-### Order Page
-![Order](screenshots/order.png)
-```
-
----
-
-## 🎯 Learning Outcomes
-
-* Understanding MVC architecture
-* Working with JDBC database connectivity
-* Building dynamic web applications using JSP & Servlets
-* Structuring Java backend projects
-* Deploying applications on Tomcat server
+* Java Web Application Development
+* MVC Architecture Implementation
+* REST API Development & Integration
+* JDBC Database Connectivity
+* Authentication & Session Management
+* CRUD Operations
+* Payment Gateway Integration (Razorpay - Dummy)
+* Responsive UI using Bootstrap
+* Application Architecture & Code Structuring
+* Git Version Control
 
 ---
 
 ## 💼 Resume Description
 
-Developed a Java-based E-Commerce Web Application using JSP, Servlets, and JDBC following MVC architecture. Implemented product listing, cart functionality, and order processing with MySQL integration. Demonstrates strong backend development and database connectivity skills.
+Developed a full-featured E-Commerce Web Application using Java, JSP, Servlets, JDBC, and MySQL following MVC architecture. Implemented user authentication, product search, cart management, admin CRUD operations, REST API integration, Bootstrap responsive UI, and dummy Razorpay payment gateway. Demonstrates strong backend development, database handling, and structured application design skills.
 
 ---
 
-## 🔮 Future Improvements
+## 🔮 Possible Enhancement
 
-* Login & Registration system
-* Admin dashboard
-* Payment gateway integration
-* Search functionality
-* Responsive UI design
-* REST API integration
-* Spring Boot version
+* Migration to Spring Boot framework
+* JWT-based authentication
+* Microservices architecture
+* Cloud deployment (AWS / Azure)
+* Advanced analytics dashboard
 
 ---
 
 ## 📜 License
 
-This project is for learning and portfolio purposes.
+This project is created for educational and portfolio purposes.
