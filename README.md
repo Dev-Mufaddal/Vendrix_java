@@ -1,6 +1,8 @@
 🛒 E-Commerce Java Web Application
 
+
 📌 Project Overview
+
 
 The JP Application is a Java-based E-Commerce Web Application that demonstrates real-world implementation of Java Web Technologies, MVC architecture, and database-driven development.
 
@@ -8,7 +10,9 @@ This project simulates the core functionality of an online shopping system inclu
 
 It is designed to showcase backend development skills using Java and serves as a strong portfolio project for Java Developer roles.
 
+
 🚀 Key Features
+
 
 👤 User functionality (view products)
 
@@ -26,7 +30,9 @@ It is designed to showcase backend development skills using Java and serves as a
 
 🌐 Web-based interface using JSP/Servlets
 
+
 🧑‍💻 Skills Demonstrated
+
 
 This project highlights the following technical skills:
 
@@ -48,7 +54,9 @@ Git & GitHub version control
 
 Project structuring best practices
 
+
 🏗️ Project Architecture
+
 
 The application follows MVC Architecture:
 
@@ -82,7 +90,9 @@ jp_application
 
 └── README.md
 
+
 ⚙️ Installation & Setup
+
 
 1️⃣ Clone Repository
 
@@ -122,7 +132,9 @@ Deploy project on:
 
 Apache Tomcat Server
 
+
 🎯 Learning Outcomes
+
 
 Through this project, I gained practical experience in:
 
@@ -138,6 +150,8 @@ Deploying applications on Tomcat server
 
 Managing project using GitHub
 
+
 📜 License
+
 
 This project is created for educational and portfolio purposes.
