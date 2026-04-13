@@ -1,4 +1,4 @@
-# 🛒 E-Commerce Web Application using Java
+# 🛒 Vendrix [E-Commerce Web Application] using Java
 
 ## 📌 Overview
 
