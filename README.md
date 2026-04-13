@@ -1,174 +1,213 @@
-# 🛒 Vendrix [E-Commerce Web Application] using Java
+# 🛍️ Vendrix
+
+> **Browse. Cart. Checkout. Done.**
+
+Vendrix is a full-featured E-Commerce Web Application built with **Java, JSP, Servlets, JDBC, and MySQL**, following a clean and scalable **MVC architecture**. From product browsing to secure checkout, Vendrix delivers a structured, real-world shopping experience backed by REST APIs, session-based authentication, and a powerful admin panel.
+
+---
 
 ## 📌 Overview
 
-This project is a **full-featured E-Commerce Web Application** developed using **Java, JSP, Servlets, JDBC, MySQL, and REST APIs**, following the **MVC (Model-View-Controller)** architecture.
+Vendrix was designed to demonstrate end-to-end implementation of a real-world online shopping platform using core Java web technologies. It separates controllers, models, and views cleanly — making it an ideal portfolio and resume project showcasing strong **Java backend development** skills.
 
-The application simulates a real-world online shopping platform where users can browse products, search items, manage cart functionality, and place orders securely. It also includes an admin panel for managing product data.
-
-The project demonstrates strong understanding of **Java backend development**, **database integration**, **RESTful services**, and **responsive UI design**, making it suitable for **resume and portfolio presentation**.
+Whether you're exploring Java MVC architecture or looking for a reference implementation of a Servlet/JSP-based e-commerce app, Vendrix provides a solid, well-structured foundation.
 
 ---
 
-## 🚀 Features
+## 🚀 Key Features
 
 ### 👤 User Features
-
-* User Registration & Login Authentication
-* Browse product catalog
-* Search products
-* Add to Cart functionality
-* Update cart items
-* Place orders
-* Integrated payment flow (Razorpay - Dummy)
-* Responsive UI using Bootstrap
-* Session management for secure access
+- User registration & login with authentication
+- Browse and search product catalog
+- Add to cart, update cart items
+- Place orders with full checkout flow
+- Razorpay payment gateway integration
+- Session management for secure access
+- Responsive, mobile-friendly UI
 
 ### 🛠️ Admin Features
+- Secure admin login
+- Add, update, and delete products
+- Manage product listings
+- Full CRUD operations on application data
 
-* Admin login functionality
-* Add new products
-* Update product details
-* Delete products
-* Manage product listings
-* Perform CRUD operations
-
-### ⚙️ System Features
-
-* MVC architecture implementation
-* REST API integration
-* JDBC database connectivity
-* MySQL relational database
-* Session tracking and validation
-* Modular and scalable code structure
-* Form validation and error handling
-* Dynamic web pages using JSP
-* Bootstrap-based responsive UI
+### ⚙️ System & Architecture
+- Clean **MVC architecture** with separation of concerns
+- **JDBC** for direct, efficient database connectivity
+- **REST API** integration for structured data communication
+- **MySQL** relational database
+- Session tracking and validation
+- Dynamic web pages using **JSP**
+- Form validation and structured error handling
+- Modular, scalable code structure
 
 ---
 
-## 🧑‍💻 Technologies Used
+## 🛠️ Tech Stack
 
-| Category             | Technology              |
-| -------------------- | ----------------------- |
-| Programming Language | Java                    |
-| Backend              | JSP, Servlets, REST API |
-| Database             | MySQL                   |
-| Connectivity         | JDBC                    |
-| Architecture         | MVC Pattern             |
-| Frontend             | HTML, CSS, Bootstrap    |
-| Payment Integration  | Razorpay (Dummy)        |
-| Server               | Apache Tomcat           |
-| Version Control      | Git, GitHub             |
+| Technology | Purpose |
+|---|---|
+| **Java** | Core backend language |
+| **JSP** | Server-side dynamic HTML templating |
+| **Servlets** | Request handling and routing |
+| **JDBC** | Database connectivity |
+| **MySQL** | Relational database for users, products, orders |
+| **REST API** | Structured client-server communication |
+| **HTML5 / CSS3** | Page structure and custom styling |
+| **Bootstrap** | Responsive, mobile-first UI components |
+| **JavaScript** | Client-side interactivity and validation |
+| **Razorpay** | Payment gateway integration |
+| **Apache Tomcat** | Web server / servlet container |
 
 ---
 
 ## 📂 Project Structure
 
-```id="l9q6tb"
-ecom_with_java
+```
+Vendrix_java/
 │
-├── jp_application
-│   ├── src/main/java
-│   │   ├── controller
-│   │   ├── model
-│   │   ├── dao
-│   │   ├── api
+├── jp_application/
+│   ├── src/main/java/
+│   │   ├── controller/        # Servlet controllers (request handling)
+│   │   ├── model/             # Entity classes & business logic
+│   │   ├── dao/               # Data Access Objects (JDBC queries)
+│   │   └── api/               # REST API endpoints
 │   │
-│   ├── src/main/webapp
-│   │   ├── jsp
-│   │   ├── css
-│   │   ├── js
+│   ├── src/main/webapp/
+│   │   ├── jsp/               # JSP view pages
+│   │   ├── css/               # Custom stylesheets
+│   │   └── js/                # Client-side scripts
 │   │
-│   └── configuration files
+│   └── configuration files    # DB config, web.xml
 │
-├── database
-│   └── ecommerce.sql
+├── database/
+│   └── ecommerce.sql          # Database schema & seed data
 │
 └── README.md
 ```
 
 ---
 
-## ⚙️ Setup Instructions
+## ⚙️ Installation & Setup
 
-### 1️⃣ Clone Repository
+### 1. Clone the Repository
 
-```bash id="gk5x1g"
-git clone https://github.com/Dev-Mufaddal/ecom_with_java.git
+```bash
+git clone https://github.com/Dev-Mufaddal/Vendrix_java.git
+cd Vendrix_java
 ```
 
-### 2️⃣ Import Project into IDE
+### 2. Import Project into IDE
 
-Open project using:
+Open the project using any of the following:
+- **IntelliJ IDEA**
+- **Eclipse IDE**
+- **NetBeans**
 
-* IntelliJ IDEA
-* Eclipse
-* NetBeans
+### 3. Configure the Database
 
-### 3️⃣ Configure Database
+Create the database in MySQL:
 
-Create database:
-
-```sql id="0ok7n7"
+```sql
 CREATE DATABASE ecommerce;
 ```
 
-Import SQL file (if provided) OR create tables manually.
+Import the schema from the provided SQL file:
 
-Update database configuration:
+```bash
+mysql -u root -p ecommerce < database/ecommerce.sql
+```
 
-```properties id="5q55hs"
+Update your database credentials in the configuration file:
+
+```properties
 db.url=jdbc:mysql://localhost:3306/ecommerce
 db.username=root
 db.password=yourpassword
 ```
 
----
+### 4. Deploy & Run
 
-### 4️⃣ Run Application
+Deploy the project on **Apache Tomcat Server** (v9+ recommended) from your IDE.
 
-Deploy project on **Apache Tomcat Server**
+Visit the application in your browser:
 
-Access application in browser:
-
-```id="2od7q9"
+```
 http://localhost:8080/jp_application
 ```
 
 ---
 
+## 🌐 Application Routes
+
+| Route | Description | Access |
+|---|---|---|
+| `/` | Home / product listing | Public |
+| `/register` | User registration | Public |
+| `/login` | User login | Public |
+| `/products` | Browse product catalog | Authenticated |
+| `/search` | Search products | Authenticated |
+| `/cart` | View and manage cart | Authenticated |
+| `/checkout` | Checkout with Razorpay payment | Authenticated |
+| `/orders` | View order history | Authenticated |
+| `/logout` | End session | Authenticated |
+| `/admin` | Admin control panel | Admin only |
+| `/admin/products` | Manage products | Admin only |
+
+---
+
+## 🔒 Security Practices
+
+- **Session Authentication** — Secure session tracking protects all authenticated routes
+- **JDBC Prepared Statements** — Parameterized queries prevent SQL injection
+- **Input Validation** — Both client-side (JS) and server-side (Java) validation
+- **Separation of Concerns** — DAO, Model, and Controller layers are cleanly isolated
+- **Admin Route Protection** — Admin pages inaccessible to regular users
+
+---
+
 ## 🎯 Skills Demonstrated
 
-* Java Web Application Development
-* MVC Architecture Implementation
-* REST API Development & Integration
-* JDBC Database Connectivity
-* Authentication & Session Management
-* CRUD Operations
-* Payment Gateway Integration (Razorpay - Dummy)
-* Responsive UI using Bootstrap
-* Application Architecture & Code Structuring
-* Git Version Control
+This project demonstrates practical understanding of:
+
+- Java web application development with JSP & Servlets
+- MVC architecture design and implementation
+- JDBC database connectivity and query handling
+- REST API development and integration
+- MySQL database integration with Java
+- Session handling and authentication patterns
+- Responsive frontend development with Bootstrap
+- Payment gateway integration (Razorpay)
+- Apache Tomcat server deployment
+- GitHub version control workflow
 
 ---
 
-## 💼 Resume Description
+## 📈 Roadmap & Future Improvements
 
-Developed a full-featured E-Commerce Web Application using Java, JSP, Servlets, JDBC, and MySQL following MVC architecture. Implemented user authentication, product search, cart management, admin CRUD operations, REST API integration, Bootstrap responsive UI, and dummy Razorpay payment gateway. Demonstrates strong backend development, database handling, and structured application design skills.
+- [ ] Migration to **Spring Boot** framework
+- [ ] JWT-based API authentication
+- [ ] Microservices architecture
+- [ ] Cloud deployment (AWS / Azure)
+- [ ] Docker containerization
+- [ ] Product filtering and advanced search
+- [ ] Advanced analytics dashboard for admin
+- [ ] Email notifications for orders
 
 ---
 
-## 🔮 Possible Enhancement
+## 👨‍💻 Author
 
-* Migration to Spring Boot framework
-* JWT-based authentication
-* Microservices architecture
-* Cloud deployment (AWS / Azure)
-* Advanced analytics dashboard
+**Mufaddal Kanchwala**
+GitHub: [@Dev-Mufaddal](https://github.com/Dev-Mufaddal)
+Email: mufaddalabbaskanchwala99@gmail.com
 
 ---
 
 ## 📜 License
 
 This project is created for educational and portfolio purposes.
+
+---
+
+⭐ If you found this project useful or interesting, consider starring the repository!
